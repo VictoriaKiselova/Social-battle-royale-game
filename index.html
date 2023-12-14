@@ -17,6 +17,35 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container header-container">
+            <div>
+                <picture>
+                    <!-- Desktop screen -->
+                    <source media="(min-width: 1440px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
+                        type="image/jpg" />
+
+                    <!-- Mobile screen -->
+                    <source media="(max-width: 320px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
+                        type="image/jpg" />
+                    <img class="card-img" src="./images/logo.jpg" alt="logo" width="33" height="33" loading="lazy" />
+                </picture>
+            </div>
+            <div class="header-lang">
+                <select class="language" name="lang" id="">
+                    <option class="header-lang-option" value="english">Eng</option>
+                    <option class="header-lang-option" value="ukrainian">Uk</option>
+                </select>
+                <div class="header-line-box">
+                    <svg class="icon-menu" width="23" height="17">
+                        <use href="./images/icon.svg#icon-menu-icon">
+                        </use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
 </body>
 
