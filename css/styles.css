@@ -38,20 +38,26 @@ img {
 }
 
 /*HEADER*/
-.header {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  background-position: left top;
+.hero {
+  padding-bottom: 80px;
+  background-position: 43% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.3),
       rgba(46, 47, 66, 0.3)
     ),
-    url("/images/hero-image-bg@2x.jpg");
+    url("/images/hero-image-bg-mob@2x.jpg");
+  display: flex;
+  flex-direction: column;
+  gap: 175px;
+}
+.header {
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 .container {
-  max-width: 320px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -63,6 +69,9 @@ img {
 }
 .card-img:hover {
   cursor: pointer;
+}
+.header-list {
+  display: none;
 }
 .language {
   background-color: transparent;
@@ -110,14 +119,167 @@ img {
 .icon-menu:hover {
   cursor: pointer;
 }
-/* @media screen and (min-resolution: 192dpi) and (min-width: 320px),
+.header-icons {
+  display: none;
+}
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.hero-about {
+  color: #fff;
+  text-align: center;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.13em;
+  margin-bottom: 12px;
+}
+.hero-order-button {
+  padding: 12px 6px;
+  border-radius: 3px;
+  background: linear-gradient(195deg, #ffb548 11.27%, #f3af34 90.4%);
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  color: #1a1917;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+}
+.hero-order-price {
+  display: inline-flex;
+  color: #1a1917;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero-order-price::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 18px;
+  stroke-width: 0.874px;
+  stroke: #1a1917;
+  opacity: 0.5;
+  background-color: #1a1917;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.hero-story-down {
+  color: #fff;
+  text-align: justify;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.83;
+  text-transform: uppercase;
+}
+.icon-header-scroll-down {
+  margin-left: 23px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    border-radius: 3px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.3),
+        rgba(46, 47, 66, 0.3)
+      ),
+      url("/images/hero-image-bg.jpg");
+  }
+  .header {
+    padding-top: 21px;
+    padding-bottom: 69px;
+  }
+  .container {
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-img {
+    width: 55px;
+    height: 55px;
+  }
+  .header-line-box {
+    display: none;
+  }
+  .header-list {
+    display: block;
+  }
+  .header-list-menu-link {
+    display: flex;
+    color: #fff;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .header-icons {
+    display: flex;
+    gap: 15px;
+  }
+  .header-lang {
+    display: flex;
+    gap: 15px;
+  }
+  .header-list-menu {
+    display: flex;
+    gap: 32px;
+  }
+  .language {
+    margin-right: 0;
+  }
+  .header-icons::before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 30px;
+    stroke-width: 0.874px;
+    stroke: #fff;
+    opacity: 0.5;
+    background-color: #fff;
+    margin-right: 0px;
+  }
+
+  .icon-header {
+    fill: #ffb548;
+  }
+}
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
+        rgba(46, 47, 66, 0.3),
+        rgba(46, 47, 66, 0.3)
       ),
       url("/images/hero-image-bg@2x.jpg");
-  } */
-/* } */
+  }
+}

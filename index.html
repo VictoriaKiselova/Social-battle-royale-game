@@ -17,35 +17,81 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <div>
-                <picture>
-                    <!-- Desktop screen -->
-                    <source media="(min-width: 1440px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
-                        type="image/jpg" />
+    <section class="hero">
+        <header class="header">
+            <div class="container header-container">
+                <div>
+                    <picture>
+                        <!-- Desktop screen -->
+                        <source media="(min-width: 1440px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
+                            type="image/jpg" />
 
-                    <!-- Mobile screen -->
-                    <source media="(max-width: 320px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
-                        type="image/jpg" />
-                    <img class="card-img" src="./images/logo.jpg" alt="logo" width="33" height="33" loading="lazy" />
-                </picture>
-            </div>
-            <div class="header-lang">
-                <select class="language" name="lang" id="">
-                    <option class="header-lang-option" value="english">Eng</option>
-                    <option class="header-lang-option" value="ukrainian">Uk</option>
-                </select>
-                <div class="header-line-box">
-                    <svg class="icon-menu" width="23" height="17">
-                        <use href="./images/icon.svg#icon-menu-icon">
-                        </use>
-                    </svg>
+                        <!-- Mobile screen -->
+                        <source media="(max-width: 320px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
+                            type="image/jpg" />
+                        <img class="card-img" src="./images/logo.jpg" alt="logo" width="33" height="33"
+                            loading="lazy" />
+                    </picture>
+                </div>
+                <div class="header-list">
+                    <ul class="header-list-menu list">
+                        <li class="header-list-menu-item">
+                            <a class="header-list-menu-link link" href="">Main</a>
+                        </li>
+                        <li class="header-list-menu-item">
+                            <a class="header-list-menu-link link" href="">About</a>
+                        </li>
+                        <li class="header-list-menu-item">
+                            <a class="header-list-menu-link link" href="">Game features</a>
+                        </li>
+                        <li class="header-list-menu-item">
+                            <a class="header-list-menu-link link" href="">System requirements</a>
+                        </li>
+                        <li class="header-list-menu-item">
+                            <a class="header-list-menu-link link" href="">Quotes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-lang">
+                    <select class="language" name="lang" id="">
+                        <option class="header-lang-option" value="english">Eng</option>
+                        <option class="header-lang-option" value="ukrainian">Uk</option>
+                    </select>
+                    <div class="header-line-box">
+                        <svg class="icon-menu" width="23" height="17">
+                            <use href="./images/icon.svg#icon-menu-icon">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="header-icons">
+                        <svg class="icon-header" width="30" height="30">
+                            <use href="./images/icon.svg#icon-xbox-icon">
+                            </use>
+                        </svg>
+                        <svg class="icon-header" width="30" height="30">
+                            <use href="./images/icon.svg#icon-steam-icon">
+                            </use>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
+        <div class="container">
+            <h1 class="hero-title">Survive at all costs</h1>
+            <p class="hero-about">Experience new social battle royale game</p>
+            <button class="hero-order-button" type="button">Buy now on Steam<span
+                    class="hero-order-price">$14.99</span></button>
+        </div>
+        <div class="container hero-story">
+            <p class="hero-story-down">The story</p>
+            <svg class="icon-header-scroll-down" width="30" height="30">
+                <use href="./images/icon.svg#icon-scroll-down">
+                </use>
+            </svg>
+        </div>
+
+    </section>
 
 </body>
 
