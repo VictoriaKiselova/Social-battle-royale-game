@@ -40,17 +40,18 @@ img {
 /*HEADER*/
 .hero {
   padding-bottom: 80px;
-  background-position: 43% 50%;
+  background-position: 44% 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-      rgba(46, 47, 66, 0.3),
-      rgba(46, 47, 66, 0.3)
+      rgba(196, 130, 44, 0.2),
+      rgba(196, 130, 44, 0.2)
     ),
     url("/images/hero-image-bg-mob@2x.jpg");
   display: flex;
   flex-direction: column;
   gap: 175px;
+  box-shadow: 2px -110px 50px -1px rgba(0, 0, 0, 0.84) inset;
 }
 .header {
   padding-top: 9px;
@@ -200,18 +201,26 @@ img {
 
 @media screen and (min-width: 1440px) {
   .hero {
-    border-radius: 3px;
+    border-radius: 1px;
+    background-position: 100% center;
+    padding-bottom: 55px;
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.3),
-        rgba(46, 47, 66, 0.3)
+        rgba(196, 130, 44, 0.2),
+        rgba(196, 130, 44, 0.2)
       ),
       url("/images/hero-image-bg.jpg");
+    box-shadow: 2px -110px 60px 20px rgba(0, 0, 0, 0.84) inset;
+    gap: 0;
+  }
+  .hero-box {
+    padding-top: 219px;
+    padding-bottom: 340px;
   }
   .header {
     padding-top: 21px;
-    padding-bottom: 69px;
   }
   .container {
+    min-width: 1440px;
     max-width: 1440px;
     padding-left: 100px;
     padding-right: 100px;
@@ -271,14 +280,35 @@ img {
   .icon-header {
     fill: #ffb548;
   }
+  .hero-title {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0.03;
+    margin-bottom: 0;
+  }
+  .hero-about {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 28px;
+  }
+  .hero-order-button {
+    padding: 17px 16px;
+    font-size: 16px;
+  }
+  .hero-story {
+    width: 68px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(
-        rgba(46, 47, 66, 0.3),
-        rgba(46, 47, 66, 0.3)
+        rgba(196, 130, 44, 0.2),
+        rgba(196, 130, 44, 0.2)
       ),
       url("/images/hero-image-bg@2x.jpg");
   }
