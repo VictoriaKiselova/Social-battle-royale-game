@@ -37,7 +37,7 @@ img {
   display: block;
 }
 
-/*HEADER*/
+/*HEADER mob*/
 .hero {
   padding-bottom: 80px;
   background-position: 44% 50%;
@@ -51,7 +51,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 175px;
-  box-shadow: 2px -110px 50px -1px rgba(0, 0, 0, 0.84) inset;
+  box-shadow: 0px -75px 100px 33px #000000 inset;
 }
 .header {
   padding-top: 9px;
@@ -199,6 +199,92 @@ img {
   margin-left: 23px;
 }
 
+/*DESCRIPTION-SECTION mob*/
+.description-section {
+  padding-top: 49px;
+  padding-bottom: 33px;
+  background-origin: border-box;
+  background-position: 32% -1px;
+  /* background-size: cover 100%; */
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.7),
+      rgba(15, 15, 15, 0.7)
+    ),
+    url("/images/cave.jpg");
+  box-shadow: 4px 78px 100px 27px #000000 inset;
+}
+.description {
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.description-about {
+  display: block;
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+.description-about::after {
+  width: 306px;
+  height: 1.7px;
+  border-radius: 2.345px;
+  background: #fff;
+  content: "";
+  display: block;
+  margin-left: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.description-about-game {
+  color: #fff;
+  text-align: justify;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  padding-left: 22px;
+  margin-bottom: 44px;
+}
+.description-images {
+  position: relative;
+  margin-left: 22px;
+}
+.deskr-img-totem {
+  display: block;
+  position: absolute;
+  z-index: 3;
+}
+.deskr-img-labyrint {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+.deskr-img-beach {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.deskr-img-location {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+/*HEADER*/
+
 @media screen and (min-width: 1440px) {
   .hero {
     border-radius: 1px;
@@ -209,7 +295,7 @@ img {
         rgba(196, 130, 44, 0.2)
       ),
       url("/images/hero-image-bg.jpg");
-    box-shadow: 2px -110px 60px 20px rgba(0, 0, 0, 0.84) inset;
+    box-shadow: 0px -75px 100px 33px #000000 inset;
     gap: 0;
   }
   .hero-box {
