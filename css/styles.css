@@ -221,7 +221,7 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 2px;
+  letter-spacing: 0.11em;
   margin-bottom: 5px;
 }
 .description-about {
@@ -265,25 +265,36 @@ img {
 }
 .deskr-img-totem {
   display: block;
-  position: absolute;
+
   z-index: 3;
 }
 .deskr-img-labyrint {
   display: block;
-  position: absolute;
+
   z-index: 2;
 }
 .deskr-img-beach {
   display: block;
-  position: absolute;
+
   z-index: 1;
 }
 .deskr-img-location {
   display: block;
-  position: absolute;
+
   z-index: 0;
 }
-/*HEADER*/
+@media screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(196, 130, 44, 0.2),
+        rgba(196, 130, 44, 0.2)
+      ),
+      url("/images/hero-image-bg@2x.jpg");
+  }
+}
+/*HEADER DESKTOP*/
 
 @media screen and (min-width: 1440px) {
   .hero {
@@ -308,8 +319,8 @@ img {
   .container {
     min-width: 1440px;
     max-width: 1440px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
   .header-container {
     justify-content: space-between;
@@ -387,9 +398,65 @@ img {
     display: block;
     margin: 0 auto;
   }
+  /*DESCRIPTION-SECTION desktop*/
+  .description-section {
+    padding-top: 200px;
+    padding-bottom: 141px;
+    background-origin: border-box;
+    background-position: left top;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(15, 15, 15, 0.85),
+        rgba(15, 15, 15, 0.85)
+      ),
+      url("/images/cave.jpg");
+    box-shadow: 2px 100px 100px 50px #000000 inset;
+  }
+  .description-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .description {
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+  .description-about-wrapper {
+    width: 580px;
+    margin-right: 145px;
+  }
+  .description-about {
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    padding-right: 0;
+    line-height: 1;
+  }
+  .description-about::after {
+    border-radius: 4;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+  }
+  .description-about-game-wrapper {
+    margin-left: 187px;
+    width: 365px;
+    height: 175px;
+  }
+  .description-about-game {
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  .deskr-img {
+    width: 502px;
+    height: 610px;
+  }
 }
-@media screen and (min-resolution: 192dpi) and (min-width: 320px),
-  screen and (min-resolution: 2dppx) and (min-width: 320px),
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(
@@ -397,5 +464,12 @@ img {
         rgba(196, 130, 44, 0.2)
       ),
       url("/images/hero-image-bg@2x.jpg");
+  }
+  .description-section {
+    background-image: linear-gradient(
+        rgba(15, 15, 15, 0.85),
+        rgba(15, 15, 15, 0.85)
+      ),
+      url("/images/cave@2x.jpg");
   }
 }
