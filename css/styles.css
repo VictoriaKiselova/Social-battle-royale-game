@@ -202,10 +202,9 @@ img {
 /*DESCRIPTION-SECTION mob*/
 .description-section {
   padding-top: 49px;
-  padding-bottom: 33px;
+  padding-bottom: 36px;
   background-origin: border-box;
   background-position: 32% -1px;
-  /* background-size: cover 100%; */
   background-repeat: no-repeat;
   background-image: linear-gradient(
       rgba(15, 15, 15, 0.7),
@@ -214,6 +213,7 @@ img {
     url("/images/cave.jpg");
   box-shadow: 4px 78px 100px 27px #000000 inset;
 }
+
 .description {
   color: #fff;
   font-family: Bebas Neue;
@@ -224,8 +224,13 @@ img {
   letter-spacing: 0.11em;
   margin-bottom: 5px;
 }
+.description-text-part {
+  margin-bottom: 50px;
+}
+.description-about-wrapper {
+  width: 230px;
+}
 .description-about {
-  display: block;
   color: #fff;
   font-family: Bebas Neue;
   font-size: 33px;
@@ -234,7 +239,6 @@ img {
   line-height: normal;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  padding-right: 20px;
 }
 .description-about::after {
   width: 306px;
@@ -247,6 +251,7 @@ img {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 .description-about-game {
   color: #fff;
   text-align: justify;
@@ -254,33 +259,35 @@ img {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1;
+  line-height: normal;
   letter-spacing: 0.05em;
   padding-left: 22px;
-  margin-bottom: 44px;
 }
 .description-images {
   position: relative;
-  margin-left: 22px;
 }
 .deskr-img-totem {
-  display: block;
-
+  left: 0;
+  top: 0;
+  position: absolute;
   z-index: 3;
 }
 .deskr-img-labyrint {
-  display: block;
-
+  left: 0;
+  top: 0;
+  position: absolute;
   z-index: 2;
 }
 .deskr-img-beach {
-  display: block;
-
+  left: 0;
+  top: 0;
+  position: absolute;
   z-index: 1;
 }
 .deskr-img-location {
-  display: block;
-
+  left: 0;
+  top: 0;
+  position: absolute;
   z-index: 0;
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
@@ -415,8 +422,10 @@ img {
   .description-container {
     display: flex;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
+  }
+  .description-text-part {
+    padding-top: 54px;
+    padding-bottom: 108px;
   }
   .description {
     font-size: 24px;
@@ -425,12 +434,10 @@ img {
   }
   .description-about-wrapper {
     width: 580px;
-    margin-right: 145px;
   }
   .description-about {
     font-size: 80px;
     letter-spacing: 0.05em;
-    padding-right: 0;
     line-height: 1;
   }
   .description-about::after {
@@ -442,17 +449,44 @@ img {
   .description-about-game-wrapper {
     margin-left: 187px;
     width: 365px;
-    height: 175px;
   }
   .description-about-game {
     font-size: 18px;
     line-height: 22px;
     padding-left: 0;
-    margin-bottom: 0;
+    margin: 0;
   }
   .deskr-img {
+    background-size: cover;
     width: 502px;
     height: 610px;
+  }
+  .description-images {
+    position: relative;
+  }
+  .deskr-img-totem {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 3;
+  }
+  .deskr-img-labyrint {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+  }
+  .deskr-img-beach {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .deskr-img-location {
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 0;
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
