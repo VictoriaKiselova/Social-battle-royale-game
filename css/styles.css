@@ -2,6 +2,8 @@ body {
   font-family: "Roboto", sans-serif;
   background: #ffffff;
   color: #434455;
+  margin: 0;
+  padding: 0;
 }
 .list {
   list-style-type: none;
@@ -201,7 +203,7 @@ img {
 
 /*DESCRIPTION-SECTION mob*/
 .description-section {
-  padding-top: 49px;
+  padding-top: 20px;
   padding-bottom: 36px;
   background-origin: border-box;
   background-position: 32% -1px;
@@ -211,7 +213,8 @@ img {
       rgba(15, 15, 15, 0.7)
     ),
     url("/images/cave.jpg");
-  box-shadow: 4px 78px 100px 27px #000000 inset;
+  box-shadow: -12px 0px 100px 60px rgba(0, 0, 0, 1) inset;
+  height: 710px;
 }
 
 .description {
@@ -222,10 +225,9 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.11em;
-  margin-bottom: 5px;
 }
 .description-text-part {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .description-about-wrapper {
   width: 230px;
@@ -265,30 +267,34 @@ img {
 }
 .description-images {
   position: relative;
+  left: 23px;
 }
-.deskr-img-totem {
+.deskr-img-list {
   left: 0;
   top: 0;
   position: absolute;
-  z-index: 3;
 }
-.deskr-img-labyrint {
-  left: 0;
-  top: 0;
-  position: absolute;
-  z-index: 2;
+/*SECTION 3 FEATURES*/
+.features {
+  padding-top: 80px;
+  padding-bottom: 85px;
+  background-color: #000;
+  margin-top: -1px;
 }
-.deskr-img-beach {
-  left: 0;
-  top: 0;
-  position: absolute;
-  z-index: 1;
+.features-conteiner {
+  background-origin: border-box;
+  background-position: 40% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(255, 181, 72, 0.1),
+      rgba(255, 181, 72, 0.1)
+    ),
+    url("/images/men.jpg");
+  box-shadow: -100px -32px 100px 100px rgba(0, 0, 0, 1) inset;
 }
-.deskr-img-location {
-  left: 0;
-  top: 0;
-  position: absolute;
-  z-index: 0;
+.features-wrapper {
+  padding-left: 100px;
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px),
@@ -299,6 +305,20 @@ img {
         rgba(196, 130, 44, 0.2)
       ),
       url("/images/hero-image-bg@2x.jpg");
+  }
+  .description-section {
+    background-image: linear-gradient(
+        rgba(15, 15, 15, 0.85),
+        rgba(15, 15, 15, 0.85)
+      ),
+      url("/images/cave@2x.jpg");
+  }
+  .features-conteiner {
+    background-image: linear-gradient(
+        rgba(255, 181, 72, 0.1),
+        rgba(255, 181, 72, 0.1)
+      ),
+      url("/images/men@2x.jpg");
   }
 }
 /*HEADER DESKTOP*/
@@ -410,14 +430,15 @@ img {
     padding-top: 200px;
     padding-bottom: 141px;
     background-origin: border-box;
-    background-position: left top;
+    background-position: left -1px;
     background-size: cover;
     background-image: linear-gradient(
         rgba(15, 15, 15, 0.85),
         rgba(15, 15, 15, 0.85)
       ),
       url("/images/cave.jpg");
-    box-shadow: 2px 100px 100px 50px #000000 inset;
+    box-shadow: 0px 0px 100px 43px rgba(0, 0, 0, 1) inset;
+    height: 961px;
   }
   .description-container {
     display: flex;
@@ -456,37 +477,11 @@ img {
     padding-left: 0;
     margin: 0;
   }
+
   .deskr-img {
     background-size: cover;
     width: 502px;
     height: 610px;
-  }
-  .description-images {
-    position: relative;
-  }
-  .deskr-img-totem {
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: 3;
-  }
-  .deskr-img-labyrint {
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: 2;
-  }
-  .deskr-img-beach {
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: 1;
-  }
-  .deskr-img-location {
-    left: 0;
-    top: 0;
-    position: absolute;
-    z-index: 0;
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
