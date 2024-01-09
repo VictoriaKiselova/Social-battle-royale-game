@@ -284,11 +284,7 @@ img {
   padding-top: 80px;
   padding-bottom: 85px;
   background-color: #000;
-  margin-top: -1px;
-}
-.features-conteiner {
-  padding-top: 20px;
-  background-position: 40% 0;
+  background-position: 36% 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(
@@ -298,8 +294,10 @@ img {
     url("/images/men.jpg");
   box-shadow: -100px -32px 100px 100px rgba(0, 0, 0, 1) inset;
 }
+
 .features-wrapper {
-  padding-left: 100px;
+  margin-left: 100px;
+  min-width: 183px;
 }
 .features-subtitle {
   color: #fff;
@@ -323,11 +321,13 @@ img {
   text-transform: uppercase;
   margin-bottom: 57px;
 }
-.features-goals {
+
+.features-goals-list-item {
   position: relative;
   overflow: hidden;
 }
-.features-goals-list-item {
+
+.features-goals-list-tittle {
   color: #ffb548;
   font-family: Bebas Neue;
   font-size: 21px;
@@ -336,12 +336,18 @@ img {
   line-height: normal;
   letter-spacing: 0.09em;
   margin-bottom: 36px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.features-goals-list-item:hover .overlay {
-  transform: translateY(0%);
+.features-goals-list-tittle:focus {
+  cursor: pointer;
+  color: brown;
 }
-.features-overlay {
+.features-goals-list-item:focus .overlay {
+  transform: translateY(60%);
+}
+.features-goals-list-item:focus .features-goals-list-tittle {
+  height: 100px;
+}
+.features-overlay-text {
   color: #fff;
   text-align: justify;
   font-family: Open Sans;
@@ -351,20 +357,18 @@ img {
   line-height: 22px; /* 122.222% */
 }
 .overlay {
-  display: none;
-  width: 179px;
-  height: 96px;
-  color: #f4f4fd;
   position: absolute;
   top: 0;
   left: 0;
-  background: transparent;
+  background-color: transparent;
   width: 100%;
-  height: 100%;
-  padding: 10px 10px;
-  transform: translateY(100%);
+  height: 80px;
+  padding: 1px 1px;
+  transform: translateY(-100%);
+  overflow: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) {
@@ -382,7 +386,7 @@ img {
       ),
       url("/images/cave@2x.jpg");
   }
-  .features-conteiner {
+  .features {
     background-image: linear-gradient(
         rgba(255, 181, 72, 0.1),
         rgba(255, 181, 72, 0.1)
@@ -555,15 +559,10 @@ img {
   }
   /*SECTION 3 FEATURES DESKTOP*/
   .features {
-    padding: 0;
-  }
-  .features-conteiner {
     padding-top: 170px;
     padding-bottom: 255px;
-    background-image: linear-gradient(
-        rgba(12, 7, 64, 0.1),
-        rgba(255, 181, 72, 0.1)
-      ),
+    background-position: left top;
+    background-image: linear-gradient(rgba(7, 4, 44, 0.2), rgba(8, 3, 37, 0.2)),
       url("/images/men.jpg");
     box-shadow: -183px 80px 1330px 53px rgba(0, 0, 0, 1) inset;
   }
@@ -578,18 +577,41 @@ img {
     font-size: 80px;
     margin-bottom: 70px;
   }
-  .features-goals-list {
-    font-size: 36px;
-    margin-bottom: 36px;
-  }
-  .features-goals-list-item {
+  .features-goals-list-tittle {
     font-size: 36px;
     letter-spacing: 0.05em;
   }
-  .features-goals-list-item:hover {
-    display: flex;
+  .features-goals-list-tittle:hover {
     cursor: pointer;
     color: brown;
+  }
+  .features-goals-list-item:hover .overlay {
+    transform: translateY(60%);
+  }
+
+  .features-goals-list-item:hover .features-goals-list-tittle {
+    height: 100px;
+  }
+  .features-overlay-text {
+    color: #fff;
+    text-align: justify;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 122.222% */
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 100px;
+    padding: 1px 1px;
+    transform: translateY(-100%);
+    overflow: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
@@ -608,5 +630,9 @@ img {
         rgba(15, 15, 15, 0.85)
       ),
       url("/images/cave@2x.jpg");
+  }
+  .features {
+    background-image: linear-gradient(rgba(10, 6, 50, 0.2), rgba(8, 3, 37, 0.2)),
+      url("/images/men@2x.jpg");
   }
 }
