@@ -436,14 +436,21 @@ tr {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 114.286% */
+  line-height: 16px;
 }
 
-/*QUOTES SEC 5 MOB*/
+/*REVIEWS SEC 5 MOB*/
 .reviews {
   padding-top: 37px;
   padding-bottom: 45px;
   background-color: #000;
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.85),
+      rgba(15, 15, 15, 0.85)
+    ),
+    url(/images/quotes-bg.jpg);
+  background-size: cover;
+  box-shadow: -12px 0px 100px 60px rgba(0, 0, 0, 1) inset;
 }
 .reviews-goal {
   margin-bottom: 36px;
@@ -497,10 +504,21 @@ tr {
   margin-left: auto;
   margin-right: auto;
 }
+
 .reviews-list-wrapper {
   width: 100%;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.08);
+  padding: 10px 13px 15px 15px;
+}
+.reviews-images-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.reviews-images-name {
+  display: flex;
+  gap: 20px;
 }
 .reviews-list-wrapper:not(:last-child) {
   margin-bottom: 21px;
@@ -510,6 +528,49 @@ tr {
   border: 4px solid #ffb548;
   border-top: none;
   border-left: none;
+}
+.media-twitter {
+  flex-shrink: 0;
+  fill: #fff;
+  opacity: 0.3;
+}
+.reviews-name {
+  color: #ffb548;
+  font-family: Bebas Neue;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.09em;
+  margin-bottom: 3px;
+}
+.reviews-player {
+  color: #fff;
+  text-align: justify;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  opacity: 0.5;
+}
+.reviews-comment {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+.reviews-date {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px),
@@ -805,9 +866,81 @@ tr {
   }
   .requirements-table-feature {
     font-size: 18px;
+    line-height: 22px;
+  }
+  /*REVIEWS SEC 5 DESKTOP*/
+  .reviews {
+    padding-top: 160px;
+    padding-bottom: 147px;
+    box-shadow: 0px 28px 100px 100px rgba(0, 0, 0, 0.63) inset;
+  }
+  .reviews-container {
+    display: flex;
+    align-items: center;
+    gap: 166px;
+  }
+  .reviews-goal {
+    margin-bottom: 0;
+  }
+  .reviews-goals-title {
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+  }
+  .reviews-goals-subtitle {
+    font-size: 80px;
+    letter-spacing: 0.03em;
+  }
+  .reviews-goal-text {
+    font-size: 18px;
     line-height: 22px; /* 122.222% */
+    margin-bottom: 40px;
+  }
+  .reviews-goal-link {
+    width: 260px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: normal;
+    padding: 18px 30px 18px 30px;
+    margin: 0;
+  }
+  .reviews-list-wrapper {
+    width: 462px;
+    float: right;
+  }
+  .reviews-list-wrapper:nth-child(2n) {
+    margin-right: 144px;
+  }
+  .reviews-list-wrapper:not(:last-child) {
+    margin-bottom: 29px;
+  }
+  .reviews-images-wrapper {
+    margin-bottom: 26px;
+  }
+
+  .reviews-img {
+    width: 65px;
+    height: 65px;
+    border: 7px solid #ffb548;
+    border-top: none;
+    border-left: none;
+  }
+  .reviews-name {
+    font-size: 24px;
+    letter-spacing: 0.08em;
+  }
+  .reviews-player {
+    font-size: 18px;
+  }
+  .reviews-comment {
+    font-size: 18px;
+  }
+  .reviews-date {
+    font-size: 14px;
   }
 }
+
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
   screen and (min-resolution: 2dppx) and (min-width: 1440px),
   screen and (min-device-pixel-ratio: 2) {
