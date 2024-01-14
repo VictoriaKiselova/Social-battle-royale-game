@@ -572,6 +572,92 @@ tr {
   line-height: normal;
   opacity: 0.5;
 }
+/*NEWSLETTER SEC 6 mob*/
+.newsletter {
+  padding-top: 64px;
+  padding-bottom: 61px;
+  background-color: #000;
+  background-image: url(/images/newsletter.jpg);
+  background-repeat: no-repeat;
+  background-size: 150px 360px;
+  background-position: 0 64px;
+  box-shadow: -100px -46px 60px 100px rgba(0, 0, 0, 1) inset;
+}
+.newsletter-subscribe-descr {
+  width: 189px;
+  float: right;
+  margin-bottom: 47px;
+}
+.newsletter-subscribe-descr-touch-title {
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11em;
+  margin-bottom: 5px;
+}
+.newsletter-subscribe-descr-title {
+  color: #fff;
+  font-family: Bebas Neue;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.newsletter-subscribe-descr-text {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.newsletter-subscribe-item-label {
+  display: block;
+  margin-bottom: 20px;
+}
+.newsletter-subscribe-email-box {
+  display: block;
+  padding-left: 16px;
+  width: 290px;
+  height: 44px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #ffb548;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.page-footer-email-box::placeholder {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+.newsletter-subscribe-button-submit {
+  display: block;
+  width: 290px;
+  border-radius: 3px;
+  background: linear-gradient(195deg, #ffb548 11.27%, #f3af34 90.4%);
+  padding: 15px 45px;
+  color: #1a1917;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 @media screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) {
@@ -599,6 +685,9 @@ tr {
   .requirements {
     background-image: linear-gradient(to bottom, black 0%, transparent 100%),
       url("/images/sos@2x.jpg");
+  }
+  .newsletter {
+    background-image: url(/images/newsletter@2x.jpg);
   }
 }
 /*HEADER DESKTOP*/
@@ -715,10 +804,10 @@ tr {
     background-size: cover;
     background-image: linear-gradient(
         rgba(15, 15, 15, 0.85),
-        rgba(15, 15, 15, 0.85)
+        rgba(15, 15, 15, 0.5)
       ),
       url("/images/cave.jpg");
-    box-shadow: 0px 0px 100px 43px rgba(0, 0, 0, 1) inset;
+    box-shadow: 0px -15px 100px 43px rgba(0, 0, 0, 1) inset;
     height: 961px;
   }
   .description-container {
@@ -806,7 +895,7 @@ tr {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; /* 122.222% */
+    line-height: 22px;
   }
   .overlay {
     position: absolute;
@@ -939,6 +1028,61 @@ tr {
   .reviews-date {
     font-size: 14px;
   }
+  /*NEWSLETTER SEC 6 DESKTOP*/
+  .newsletter {
+    padding-top: 220px;
+    padding-bottom: 152px;
+    background-position: 160px 49px;
+    background-size: 446px 695px;
+    background-image: url(/images/newsletter-desktop.jpg);
+    box-shadow: 110px 16px 80px 80px rgba(0, 0, 0, 1) inset,
+      -880px -50px 60px 12px rgba(0, 0, 0, 1) inset;
+  }
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 60px;
+  }
+  .newsletter-subscribe-descr {
+    width: 645px;
+  }
+  .newsletter-subscribe-descr-touch-title {
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    margin-bottom: 9px;
+  }
+  .newsletter-subscribe-descr-title {
+    font-size: 80px;
+    letter-spacing: 0.03em;
+    margin-bottom: 45px;
+  }
+  .newsletter-subscribe-descr-text {
+    font-size: 18px;
+  }
+  .newsletter-subscribe-form {
+    display: flex;
+    gap: 17px;
+  }
+  .newsletter-subscribe-item-label {
+    margin: 0;
+  }
+  .newsletter-subscribe-email-box {
+    padding-left: 21px;
+    border-radius: 5px;
+    width: 367px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .page-footer-email-box::placeholder {
+    font-size: 18px;
+  }
+  .newsletter-subscribe-button-submit {
+    border-radius: 4px;
+    width: 260px;
+    padding: 18px 70px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
@@ -954,7 +1098,7 @@ tr {
   .description-section {
     background-image: linear-gradient(
         rgba(15, 15, 15, 0.85),
-        rgba(15, 15, 15, 0.85)
+        rgba(15, 15, 15, 0.5)
       ),
       url("/images/cave@2x.jpg");
   }
@@ -970,5 +1114,8 @@ tr {
         #080a0b 99.74%
       ),
       url("/images/sos@2x.jpg");
+  }
+  .newsletter {
+    background-image: url(/images/newsletter-desktop@2x.jpg);
   }
 }
