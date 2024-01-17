@@ -21,34 +21,36 @@
         <header class="header">
             <div class="container header-container">
                 <div>
-                    <picture>
-                        <!-- Desktop screen -->
-                        <source media="(min-width: 1440px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
-                            type="image/jpg" />
+                    <a href="index.html">
+                        <picture>
+                            <!-- Desktop screen -->
+                            <source media="(min-width: 1440px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
+                                type="image/jpg" />
 
-                        <!-- Mobile screen -->
-                        <source media="(max-width: 320px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
-                            type="image/jpg" />
-                        <img class="card-img" src="./images/logo.jpg" alt="logo" width="33" height="33"
-                            loading="lazy" />
-                    </picture>
+                            <!-- Mobile screen -->
+                            <source media="(max-width: 320px)" srcset="./images/logo.jpg 1x, ./images/logo@2x.jpg 2x"
+                                type="image/jpg" />
+                            <img class="card-img" src="./images/logo.jpg" alt="logo" width="33" height="33"
+                                loading="lazy" />
+                        </picture>
+                    </a>
                 </div>
                 <div class="header-list">
                     <ul class="header-list-menu list">
                         <li class="header-list-menu-item">
-                            <a class="header-list-menu-link link" href="">Main</a>
+                            <a class="header-list-menu-link link" href="index.html">Main</a>
                         </li>
                         <li class="header-list-menu-item">
-                            <a class="header-list-menu-link link" href="">About</a>
+                            <a class="header-list-menu-link link" href="#about">About</a>
                         </li>
                         <li class="header-list-menu-item">
-                            <a class="header-list-menu-link link" href="">Game features</a>
+                            <a class="header-list-menu-link link" href="#features">Game features</a>
                         </li>
                         <li class="header-list-menu-item">
-                            <a class="header-list-menu-link link" href="">System requirements</a>
+                            <a class="header-list-menu-link link" href="#requirements">System requirements</a>
                         </li>
                         <li class="header-list-menu-item">
-                            <a class="header-list-menu-link link" href="">Quotes</a>
+                            <a class="header-list-menu-link link" href="#reviews">Quotes</a>
                         </li>
                     </ul>
                 </div>
@@ -58,20 +60,20 @@
                         <option class="header-lang-option" value="ukrainian">Uk</option>
                     </select>
                     <div class="header-line-box">
-                        <svg class="icon-menu" width="23" height="17">
-                            <use href="./images/icon.svg#icon-menu-icon">
-                            </use>
-                        </svg>
+                        <a href=""><svg class="icon-menu" width="23" height="17">
+                                <use href="./images/icon.svg#icon-menu-icon">
+                                </use>
+                            </svg></a>
                     </div>
                     <div class="header-icons">
-                        <svg class="icon-header" width="30" height="30">
-                            <use href="./images/icon.svg#icon-xbox-icon">
-                            </use>
-                        </svg>
-                        <svg class="icon-header" width="30" height="30">
-                            <use href="./images/icon.svg#icon-steam-icon">
-                            </use>
-                        </svg>
+                        <a class="header-icons-link" href=""><svg class="icon-header" width="30" height="30">
+                                <use href="./images/icon.svg#icon-xbox-icon">
+                                </use>
+                            </svg></a>
+                        <a class="header-icons-link" href=""><svg class="icon-header" width="30" height="30">
+                                <use href="./images/icon.svg#icon-steam-icon">
+                                </use>
+                            </svg></a>
                     </div>
                 </div>
             </div>
@@ -94,7 +96,7 @@
         </div>
     </section>
 
-    <section class="description-section">
+    <section class="description-section" id="about">
         <div class="container description-container">
             <div class="description-text-part">
                 <h3 class="description">What is SOS?</h3>
@@ -177,14 +179,14 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="container features-conteiner">
             <div class="features-wrapper">
                 <h3 class="features-subtitle">What’s so special?</h3>
                 <h1 class="features-tittle">features</h1>
                 <div class="features-goals">
                     <ul class="features-goals-list">
-                        <li class="features-goals-list-item">
+                        <li class="features-goals-list-item list">
                             <p class="features-goals-list-tittle">Survive at all costs</p>
                             <div class=" overlay">
                                 <p class="features-overlay-text">You have 30 minutes to find a relic, signal for
@@ -193,7 +195,7 @@
                                     one of three spots on the rescue chopper.</p>
                             </div>
                         </li>
-                        <li class="features-goals-list-item">
+                        <li class="features-goals-list-item list">
                             <p class="features-goals-list-tittle">Create allies and enemies</p>
                             <div class=" overlay">
                                 <p class="features-overlay-text">You have 30 minutes to find a relic, signal for
@@ -202,7 +204,7 @@
                                     one of three spots on the rescue chopper.</p>
                             </div>
                         </li>
-                        <li class="features-goals-list-item">
+                        <li class="features-goals-list-item list">
                             <p class="features-goals-list-tittle">Imprress the audience</p>
                             <div class=" overlay">
                                 <p class="features-overlay-text">You have 30 minutes to find a relic, signal for
@@ -217,7 +219,7 @@
         </div>
     </section>
 
-    <section class="requirements">
+    <section class="requirements" id="requirements">
         <div class="container">
             <div class="requirements-text-wrapper">
                 <h3 class="requirements-text-tittle">Can my computer run this game?</h3>
@@ -262,13 +264,12 @@
                             </p>
                         </td>
                     </tr>
-
                 </table>
             </div>
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container reviews-container">
             <div class="reviews-goal">
                 <h3 class="reviews-goals-title">What people think?</h3>
@@ -281,7 +282,6 @@
                     has to say.</p>
                 <a class="reviews-goal-link link" href="./index.html" target="_blank">Read more testemonials</a>
             </div>
-
             <ul class="reviews-list list">
                 <li class="reviews-list-wrapper">
                     <div class="reviews-images-wrapper">
@@ -303,7 +303,7 @@
                             </div>
                         </div>
 
-                        <a href="" class="reviews-media">
+                        <a href="https://twitter.com/" class="reviews-media" target="_blank">
                             <svg class="media-twitter" width="18" height="14" aria-label="twitter">
                                 <use href="./images/icon.svg#icon-twitter2"></use>
                             </svg>
@@ -333,7 +333,7 @@
                                 </p>
                             </div>
                         </div>
-                        <a href="" class="reviews-media">
+                        <a href="https://twitter.com/" class="reviews-media" target="_blank">
                             <svg class="media-twitter" width="18" height="14" aria-label="twitter">
                                 <use href="./images/icon.svg#icon-twitter2"></use>
                             </svg>
@@ -363,7 +363,7 @@
                                 <p class="reviews-player">Uproxx</p>
                             </div>
                         </div>
-                        <a href="" class="reviews-media">
+                        <a href="https://twitter.com/" class="reviews-media" target="_blank">
                             <svg class="media-twitter" width="18" height="14" aria-label="twitter">
                                 <use href="./images/icon.svg#icon-twitter2"></use>
                             </svg>
@@ -398,6 +398,64 @@
             </div>
         </div>
     </section>
+
+    <!--PAGE FOOTER-->
+    <footer class="page-footer">
+        <div class="container page-footer-container">
+            <div class="page-footer-wrapper">
+                <a class="page-footer-logo-link" href="index.html"><img class="page-footer-logo" src="./images/logo.jpg"
+                        alt="logo" width="50" height="50"></a>
+                <nav>
+                    <ul class="page-footer-menu-list">
+                        <li class="page-footer-menu-list-nav list"><a class="page-footer-menu-link link" href="#"
+                                id="./index.html">Main</a></li>
+                        <li class="page-footer-menu-list-nav list"><a class="page-footer-menu-link link" href="#"
+                                id="#about">About</a></li>
+                        <li class="page-footer-menu-list-nav list"><a class="page-footer-menu-link link" href="#"
+                                id="features">Game features</a>
+                        </li>
+                        <li class="page-footer-menu-list-nav list"><a class="page-footer-menu-link link" href="#"
+                                id="requirements">System
+                                requirements</a>
+                        </li>
+                        <li class="page-footer-menu-list-nav list"><a class="page-footer-menu-link link" href="#"
+                                id="reviews">Quotes</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="page-footer-media">
+                    <li class="list"><a class="link" href="https://www.facebook.com/" target="_blank"><svg
+                                class="media-platforms" width="10" height="18" aria-label="facebook">
+                                <use href="./images/icon.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li class="list"><a class="link" href="https://twitter.com/" target="_blank"><svg
+                                class="media-platforms" width="21" height="16" aria-label="twitter">
+                                <use href="./images/icon.svg#icon-twitter2"></use>
+                            </svg></a></li>
+                    <li class="list"><a class="link" href="https://www.youtube.com/" target="_blank"><svg
+                                class="media-youtube" width="25" height="18" aria-label="youtube">
+                                <use href="./images/icon.svg#icon-youtube"></use>
+                            </svg></a></li>
+                    <li class="list"><a class="link" href="https://www.viber.com/ua/" target="_blank"><svg
+                                class="media-platforms" width="19" height="18" aria-label="messenger">
+                                <use href="./images/icon.svg#icon-twitch"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <hr class="page-footer-demarcation-line">
+            <div class="page-footer-rights-wrapper">
+                <p class="page-footer-rights"><span class="page-footer-rights">&#169;</span> 2018 Outpost Games, Inc.
+                    All
+                    Rights Reserved</p>
+                <ul class="page-footer-policy">
+                    <li class="list"><a class="page-footer-policy-item link" href="#">Privacy Policy</a></li>
+                    <li class="list"><a class="page-footer-policy-item link" href="#">Terms of Services</a></li>
+                    <li class="list"><a class="page-footer-policy-item link" href="#">Code of Conduct</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="./JS/script.js" type="module" defer></script>
 </body>
