@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 .list {
   list-style-type: none;
 }
@@ -41,6 +44,7 @@ img {
 }
 
 /*HEADER/HERO mob*/
+
 .hero {
   padding-bottom: 80px;
   background-position: 44% 50%;
@@ -50,7 +54,7 @@ img {
       rgba(196, 130, 44, 0.2),
       rgba(196, 130, 44, 0.2)
     ),
-    url("/images/hero-image-bg-mob@2x.jpg");
+    url("../images/hero-image-bg-mob@2x.jpg");
   display: flex;
   flex-direction: column;
   gap: 175px;
@@ -65,13 +69,16 @@ img {
   justify-content: space-between;
 }
 .container {
-  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
-
+@media screen and (min-width: 480px) {
+  .container {
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .card-img:hover {
   cursor: pointer;
 }
@@ -675,7 +682,7 @@ tr {
 }
 .newsletter-subscribe-button-submit {
   display: block;
-  width: 290px;
+  width: 100%;
   border-radius: 3px;
   background: linear-gradient(195deg, #ffb548 11.27%, #f3af34 90.4%);
   padding: 15px 45px;
@@ -839,8 +846,8 @@ tr {
     padding-top: 21px;
   }
   .container {
-    min-width: 1440px;
-    max-width: 1440px;
+    width: 1440px;
+
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -937,6 +944,7 @@ tr {
       url("/images/cave.jpg");
     box-shadow: 0px -15px 100px 43px rgba(0, 0, 0, 1) inset;
     height: 961px;
+    transition: ;
   }
   .description-container {
     display: flex;
