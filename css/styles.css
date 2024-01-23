@@ -47,6 +47,7 @@ img {
 }
 
 /*HEADER/HERO mob*/
+
 .hero {
   padding-bottom: 80px;
   background-position: 44% 50%;
@@ -56,7 +57,7 @@ img {
       rgba(196, 130, 44, 0.2),
       rgba(196, 130, 44, 0.2)
     ),
-    url("./images/hero-image-bg-mob@2x.jpg");
+    url("../images/hero-image-bg-mob@2x.jpg");
   display: flex;
   flex-direction: column;
   gap: 175px;
@@ -212,9 +213,6 @@ img {
   margin-left: 8px;
   margin-right: 8px;
 }
-.hero-story {
-  width: 68px;
-}
 .hero-story-down {
   color: #fff;
   text-align: justify;
@@ -247,7 +245,7 @@ img {
       rgba(15, 15, 15, 0.7),
       rgba(15, 15, 15, 0.7)
     ),
-    url("/images/cave.jpg");
+    url("../images/cave.jpg");
   box-shadow: -12px 0px 100px 60px rgba(0, 0, 0, 1) inset;
   height: 710px;
 }
@@ -322,7 +320,7 @@ img {
       rgba(255, 181, 72, 0.1),
       rgba(255, 181, 72, 0.1)
     ),
-    url("/images/men.jpg");
+    url("../images/men.jpg");
   box-shadow: -100px -32px 100px 100px rgba(0, 0, 0, 1) inset;
 }
 .features-wrapper {
@@ -415,7 +413,7 @@ img {
   background-size: 170% 58%;
   background-repeat: no-repeat;
   background-image: linear-gradient(to bottom, black 0%, transparent 100%),
-    url("/images/sos.jpg");
+    url("../images/sos.jpg");
 
   box-shadow: 0px -26px 35px 15px rgba(0, 0, 0, 1) inset;
 }
@@ -485,7 +483,7 @@ tr {
       rgba(15, 15, 15, 0.85),
       rgba(15, 15, 15, 0.85)
     ),
-    url(/images/quotes-bg.jpg);
+    url(../images/quotes-bg.jpg);
   background-size: cover;
   box-shadow: -12px 0px 100px 60px rgba(0, 0, 0, 1) inset;
 }
@@ -618,7 +616,7 @@ tr {
   padding-top: 64px;
   padding-bottom: 61px;
   background-color: #000;
-  background-image: url(/images/newsletter.jpg);
+  background-image: url(../images/newsletter.jpg);
   background-repeat: no-repeat;
   background-size: 150px 360px;
   background-position: 0 64px;
@@ -872,28 +870,28 @@ tr {
         rgba(196, 130, 44, 0.2),
         rgba(196, 130, 44, 0.2)
       ),
-      url("/images/hero-image-bg@2x.jpg");
+      url("../images/hero-image-bg@2x.jpg");
   }
   .description-section {
     background-image: linear-gradient(
         rgba(15, 15, 15, 0.85),
         rgba(15, 15, 15, 0.85)
       ),
-      url("/images/cave@2x.jpg");
+      url("../images/cave@2x.jpg");
   }
   .features {
     background-image: linear-gradient(
         rgba(255, 181, 72, 0.1),
         rgba(255, 181, 72, 0.1)
       ),
-      url("/images/men@2x.jpg");
+      url("../images/men@2x.jpg");
   }
   .requirements {
     background-image: linear-gradient(to bottom, black 0%, transparent 100%),
-      url("/images/sos@2x.jpg");
+      url("../images/sos@2x.jpg");
   }
   .newsletter {
-    background-image: url(/images/newsletter@2x.jpg);
+    background-image: url(../images/newsletter@2x.jpg);
   }
 }
 
@@ -907,7 +905,7 @@ tr {
         rgba(196, 130, 44, 0.2),
         rgba(196, 130, 44, 0.2)
       ),
-      url("/images/hero-image-bg.jpg");
+      url("../images/hero-image-bg.jpg");
     box-shadow: 0px -75px 100px 33px #000000 inset;
     gap: 0;
   }
@@ -998,8 +996,6 @@ tr {
     font-size: 16px;
   }
   .hero-story {
-    width: 68px;
-    display: block;
     margin: 0 auto;
   }
   /*DESCRIPTION-SECTION desktop*/
@@ -1014,7 +1010,7 @@ tr {
         rgba(15, 15, 15, 0.85),
         rgba(15, 15, 15, 0.5)
       ),
-      url("/images/cave.jpg");
+      url("../images/cave.jpg");
     box-shadow: 0px -15px 100px 43px rgba(0, 0, 0, 1) inset;
     height: 961px;
   }
@@ -1066,7 +1062,7 @@ tr {
     padding-bottom: 255px;
     background-position: left top;
     background-image: linear-gradient(rgba(7, 4, 44, 0.2), rgba(8, 3, 37, 0.2)),
-      url("/images/men.jpg");
+      url("../images/men.jpg");
     box-shadow: -183px 80px 1330px 53px rgba(0, 0, 0, 1) inset;
   }
   .features-wrapper {
@@ -1128,7 +1124,7 @@ tr {
         rgba(0, 0, 0, 0) 19.22%,
         #080a0b 99.74%
       ),
-      url("/images/sos.jpg");
+      url("../images/sos.jpg");
   }
   .requirements-text-wrapper {
     margin-bottom: 133px;
@@ -1239,7 +1235,7 @@ tr {
     padding-bottom: 152px;
     background-position: 160px 49px;
     background-size: 446px 695px;
-    background-image: url(/images/newsletter-desktop.jpg);
+    background-image: url(../images/newsletter-desktop.jpg);
     box-shadow: 110px 16px 80px 80px rgba(0, 0, 0, 1) inset,
       -880px -50px 60px 12px rgba(0, 0, 0, 1) inset;
   }
@@ -1345,18 +1341,18 @@ tr {
         rgba(196, 130, 44, 0.2),
         rgba(196, 130, 44, 0.2)
       ),
-      url("/images/hero-image-bg@2x.jpg");
+      url("../images/hero-image-bg@2x.jpg");
   }
   .description-section {
     background-image: linear-gradient(
         rgba(15, 15, 15, 0.85),
         rgba(15, 15, 15, 0.5)
       ),
-      url("/images/cave@2x.jpg");
+      url("../images/cave@2x.jpg");
   }
   .features {
     background-image: linear-gradient(rgba(10, 6, 50, 0.2), rgba(8, 3, 37, 0.2)),
-      url("/images/men@2x.jpg");
+      url("../images/men@2x.jpg");
   }
   .requirements {
     background-image: radial-gradient(
@@ -1365,9 +1361,9 @@ tr {
         rgba(0, 0, 0, 0) 19.22%,
         #080a0b 99.74%
       ),
-      url("/images/sos@2x.jpg");
+      url("../images/sos@2x.jpg");
   }
   .newsletter {
-    background-image: url(/images/newsletter-desktop@2x.jpg);
+    background-image: url(../images/newsletter-desktop@2x.jpg);
   }
 }
