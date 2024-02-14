@@ -1052,7 +1052,8 @@ tr {
     margin: 0;
   }
   .deskr-img {
-    background-size: cover;
+    border: #2e2d2c 2px solid;
+    border-radius: 3px;
     width: 502px;
     height: 610px;
   }
