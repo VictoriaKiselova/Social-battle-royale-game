@@ -223,6 +223,9 @@ img {
   line-height: 1.83;
   text-transform: uppercase;
 }
+.hero-story {
+  width: 65px;
+}
 .icon-header-scroll-down {
   display: block;
   fill: #fff;
@@ -237,7 +240,7 @@ img {
 /*DESCRIPTION-SECTION mob*/
 .description-section {
   padding-top: 20px;
-  padding-bottom: 36px;
+  padding-bottom: 400px;
   background-origin: border-box;
   background-position: 32% -1px;
   background-repeat: no-repeat;
@@ -247,9 +250,7 @@ img {
     ),
     url("../images/cave.jpg");
   box-shadow: -12px 0px 100px 60px rgba(0, 0, 0, 1) inset;
-  height: 710px;
 }
-
 .description {
   color: #fff;
   font-family: Bebas Neue;
@@ -300,12 +301,15 @@ img {
 }
 .description-images {
   position: relative;
-  left: 23px;
 }
 .deskr-img-list {
   left: 0;
   top: 0;
   position: absolute;
+}
+.deskr-img {
+  border: #2e2d2c 1px solid;
+  border-radius: 3px;
 }
 
 /*SECTION 3 FEATURES MOB*/
@@ -328,6 +332,7 @@ img {
   min-width: 183px;
 }
 .features-subtitle {
+  text-align: center;
   color: #fff;
   font-family: Bebas Neue;
   font-size: 18px;
@@ -339,6 +344,7 @@ img {
   margin-bottom: 2px;
 }
 .features-tittle {
+  text-align: center;
   color: #fff;
   font-family: Bebas Neue;
   font-size: 33px;
@@ -360,7 +366,7 @@ img {
   height: 14px;
   background-color: #ffb548;
   border-radius: 100%;
-  margin-right: 32px;
+  margin-right: 9px;
 }
 .features-goals-list-tittle {
   color: #ffb548;
@@ -874,8 +880,8 @@ tr {
   }
   .description-section {
     background-image: linear-gradient(
-        rgba(15, 15, 15, 0.85),
-        rgba(15, 15, 15, 0.85)
+        rgba(15, 15, 15, 0.75),
+        rgba(15, 15, 15, 0.75)
       ),
       url("../images/cave@2x.jpg");
   }
@@ -996,7 +1002,11 @@ tr {
     font-size: 16px;
   }
   .hero-story {
+    width: 100px;
     margin: 0 auto;
+  }
+  .hero-story-down {
+    text-align: center;
   }
   /*DESCRIPTION-SECTION desktop*/
   .description-section {
@@ -1081,16 +1091,19 @@ tr {
     font-size: 36px;
     letter-spacing: 0.05em;
   }
+  .features-goals-list-tittle::before {
+    margin-right: 32px;
+  }
   .features-goals-list-tittle:hover {
     cursor: pointer;
     color: brown;
   }
-  .features-goals-list-item:hover .overlay {
+  /* .features-goals-list-item:hover .overlay {
     transform: translateY(60%);
-  }
-  .features-goals-list-item:hover .features-goals-list-tittle {
+  } */
+  /* .features-goals-list-item:hover .features-goals-list-tittle {
     height: 100px;
-  }
+  } */
   .features-overlay-text {
     color: #fff;
     text-align: justify;
