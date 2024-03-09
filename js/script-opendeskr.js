@@ -1,10 +1,12 @@
 const featuresList = document.querySelectorAll(".features-goals-list-item");
+const featuresText = document.querySelectorAll(".features-overlay-text");
 
-let text = `<div> <p>You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.</p></div> `;
-function showText(text) {
-  featuresList.forEach(function (item) {
-    item.innerHTML += text;
+featuresList.forEach((elem) => {
+  elem.classList.add("increase");
+  elem.addEventListener("click", function () {
+    featuresText.forEach((elem) => {
+      elem.innerHTML = `You have 30 minutes to find a relic, signal for extraction, and grab
+one of three spots on the rescue chopper.`;
+    });
   });
-}
-
-featuresList.addEventListener("click", showText(text));
+});
