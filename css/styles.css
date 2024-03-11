@@ -312,7 +312,7 @@ img {
   padding-top: 80px;
   padding-bottom: 85px;
   background-color: #000;
-  background-position: 36% 0;
+  background-position: 34% 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient(
@@ -324,7 +324,6 @@ img {
 }
 .features-wrapper {
   margin-left: 100px;
-  min-width: 183px;
 }
 .features-subtitle {
   text-align: center;
@@ -353,8 +352,16 @@ img {
 .features-goals-list-item {
   position: relative;
   overflow: hidden;
+  color: #ffb548;
+  font-family: Bebas Neue;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.09em;
+  height: 120px;
 }
-.features-goals-list-tittle::before {
+.features-goals-list-item::before {
   content: "";
   display: inline-block;
   width: 14px;
@@ -363,46 +370,26 @@ img {
   border-radius: 100%;
   margin-right: 9px;
 }
-.features-goals-list-tittle {
-  color: #ffb548;
-  font-family: Bebas Neue;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.09em;
-  margin-bottom: 36px;
+.features-goals-list-item:focus .features-goals-list-item::before {
+  background-color: brown;
 }
-.features-goals-list-tittle:focus {
+.features-goals-list-item:focus {
   cursor: pointer;
   color: brown;
 }
-.features-goals-list-item:focus .overlay {
-  transform: translateY(60%);
-}
-.features-goals-list-item:focus .features-goals-list-tittle {
-  height: 100px;
-}
-.features-overlay-text {
+.increase {
+  display: block;
   color: #fff;
   text-align: justify;
   font-family: Open Sans;
-  font-size: 18px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  width: 100%;
-  height: 80px;
-  padding: 1px 1px;
-  transform: translateY(-100%);
-  overflow: auto;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 120px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  padding: 1px;
 }
 
 /*REQUIREMENTS SEC 4 MOB*/
@@ -1072,6 +1059,7 @@ tr {
   }
   .features-wrapper {
     padding-left: 700px;
+    margin-left: 60px;
   }
   .features-subtitle {
     font-size: 24px;
@@ -1081,45 +1069,29 @@ tr {
     font-size: 80px;
     margin-bottom: 70px;
   }
-  .features-goals-list-tittle {
+  .features-goals-list-item {
     font-size: 36px;
     letter-spacing: 0.05em;
   }
-  .features-goals-list-tittle::before {
+  .features-goals-list-item::before {
     margin-right: 32px;
   }
-  .features-goals-list-tittle:hover {
+  .features-goals-list-item:hover .features-goals-list-item::before {
+    background-color: brown;
+  }
+  .features-goals-list-item:hover {
     cursor: pointer;
     color: brown;
   }
-  .features-goals-list-item:hover .overlay {
-    transform: translateY(60%);
-  }
   .features-goals-list-item {
-    position: relative;
-  }
-  .features-overlay-text {
-    color: #fff;
-    text-align: justify;
-    font-family: Open Sans;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-  }
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    width: 100%;
-    padding: 1px 1px;
-    transform: translateY(-100%);
-    overflow: auto;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 110px;
+    margin-bottom: 10px;
   }
   .increase {
-    height: 120px;
+    font-size: 15px;
+  }
+  .features-goals-list-item:hover::before {
+    background-color: brown;
   }
 
   /*REQUIREMENTS SEC 4 DESKTOP*/
