@@ -1,0 +1,50 @@
+/*===== MOBILE MENU =====*/
+.modal-menu {
+  padding: 56px 15px;
+  background-image: url("../images//newsletter-desktop.jpg");
+  background-size: cover;
+  box-shadow: 1px 100px 100px 93px rgba(0, 0, 0, 0.93) inset;
+  border: rgb(70, 69, 69) 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.modal-mob {
+  position: absolute;
+  top: 15px;
+  right: 12px;
+}
+.modal-button-close {
+  border: none;
+  background-color: transparent;
+}
+.modal-button-close-icon {
+  fill: #fff;
+  background-color: transparent;
+}
+.modal-mob-icons-wrapper {
+  margin-bottom: 40px;
+}
+.modal-mob-icon {
+  fill: rgba(255, 181, 72, 1);
+  stroke: #131313;
+  margin-right: 10px;
+}
+.modal-mob-list-menu-item {
+  border: 1px solid #1a1917;
+  padding: 6px 9px;
+}
+.modal-mob-list-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.modal-mob-list-menu-link {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
