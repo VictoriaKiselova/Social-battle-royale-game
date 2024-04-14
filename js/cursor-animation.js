@@ -9,7 +9,7 @@ const RADIUS = 28;
 const circle = new mojs.Shape({
   left: 0,
   top: 0,
-  stroke: "#FF9C00",
+  stroke: "#FF2400",
   strokeWidth: { [2 * RADIUS]: 0 },
   fill: "none",
   scale: { 0: 1, easing: "quad.out" },
@@ -25,7 +25,7 @@ const burst = new mojs.Burst({
   children: {
     shape: "star",
     radius: RADIUS / 2.2,
-    fill: "#FD7932",
+    fill: "#E62020",
     degreeShift: "stagger(0,-5)",
     duration: 700,
     delay: 200,
@@ -37,7 +37,7 @@ const star = new mojs.Shape({
   left: 0,
   top: 0,
   shape: "star",
-  fill: "#FF9C00",
+  fill: "#E62020",
   scale: { 0: 1 },
   easing: "elastic.out",
   duration: 1600,
@@ -48,6 +48,7 @@ const star = new mojs.Shape({
 const timeline = new mojs.Timeline({ speed: 1.5 });
 
 timeline.add(burst, circle, star);
+console.log(star);
 
 document.addEventListener("click", function (e) {
   const coords = { x: e.pageX, y: e.pageY };
@@ -58,4 +59,6 @@ document.addEventListener("click", function (e) {
 });
 setTimeout(() => {
   star.tune({ scale: 0 }).replay();
+  const content = document.querySelector('div[data-name="mojs-shape"]');
+  content.remove();
 }, 600);
